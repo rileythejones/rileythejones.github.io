@@ -1,16 +1,18 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: What makes me tick. 
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+My name is Riley Jones. These are a few of the things I'm interested in:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- Fragrance
+- Nutrition
+- Statistics
+- Prediction
 
-What else do you need?
+Feel free to reach out with any questions if you are intereted in working with me. 
 
 ### my history
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+If you are looking for information it's good to use [Google](http://www.google.com) and it will answer **most** of your questions.
