@@ -9,6 +9,7 @@ My name is Riley Jones. These are a few of the things I'm interested in:
 - Statistics
 - Prediction
 - Fragrance
+- Music 
 - Nutrition
 
 
