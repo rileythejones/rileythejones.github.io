@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open Data - Trail Data 
+title: data
 subtitle: DS Unit 1 Project
 gh-repo: daattali/beautiful-jekyll
 gh-badge: [star, fork, follow]
