@@ -35,6 +35,11 @@ linkedin:
   name: "LinkedIn"
   baseURL: "https://linkedin.com/in/"
   icon: "fa-linkedin"
+  
+medium:
+  name: "Medium"
+  baseURL: "https://medium.com/@"
+  icon: "fa-medium"
 
 xing:
   name: "Xing"
