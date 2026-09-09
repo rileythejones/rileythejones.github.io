@@ -7,6 +7,48 @@ bigimg:
   - "/img/graphedit1.jpg" : "Swarmplot trail data"
 ---
 
+{% if paginator.page == 1 or paginator == nil %}
+<section id="projects" aria-labelledby="recent-projects-heading">
+  <h2 id="recent-projects-heading">Recent Projects</h2>
+
+  <article class="post-preview" aria-labelledby="werewolf-title">
+    <h3 class="post-title" id="werewolf-title">
+      <a href="https://cuboulder-ds.github.io/CSCI-5423-Final/">The Werewolf Among Us: Humans vs. LLMs</a>
+    </h3>
+    <div class="post-entry">
+      <p>A collaborative research project comparing how humans and AI agents persuade, coordinate, and vote in social deduction games, drawing on 163 human games and 19 LLM simulations across five models.</p>
+      <p><strong>My contribution:</strong> I ran Werewolf Arena simulations, collected gameplay data, explored the human dataset, and wrote the Introduction and Methods sections. Our analysis identified differences in persuasion strategies and voting behavior, with limitations from the small simulation sample and differing game formats.</p>
+      <p><a class="post-read-more" href="https://cuboulder-ds.github.io/CSCI-5423-Final/" aria-label="View the Werewolf project">View project</a> &middot; <a class="post-read-more" href="https://github.com/CUBoulder-DS/CSCI-5423-Final" aria-label="View the Werewolf project code">View code</a></p>
+    </div>
+  </article>
+
+  <article class="post-preview" aria-labelledby="perestroika-title">
+    <h3 class="post-title" id="perestroika-title">
+      <a href="https://sites.google.com/view/perestroika-in-python/home">Perestroika in Python: Economic Divergence After the USSR</a>
+    </h3>
+    <div class="post-entry">
+      <p>A Python data science project investigating how military spending and economic conditions relate to the divergent paths of 15 former Soviet republics.</p>
+      <p><strong>My work:</strong> I combined SIPRI military expenditure records with World Bank economic indicators, standardized country identifiers, and prepared the data for exploration and modeling. I applied clustering, PCA, association rule mining, and supervised learning to investigate regional patterns and classify economic performance, comparing model accuracy with interpretability.</p>
+      <p><a class="post-read-more" href="https://sites.google.com/view/perestroika-in-python/home" aria-label="View the Perestroika in Python project">View project</a> &middot; <a class="post-read-more" href="https://github.com/rileythejones/-CUBoulder-DS-CSCI-5612-Project" aria-label="View the Perestroika in Python code">View code</a></p>
+    </div>
+  </article>
+
+  <article class="post-preview" aria-labelledby="colorado-utah-title">
+    <h3 class="post-title" id="colorado-utah-title">
+      <a href="https://sites.google.com/colorado.edu/dataminingspring2025group2/home">Colorado vs. Utah: A Data-Driven Lifestyle Comparison</a>
+    </h3>
+    <div class="post-entry">
+      <p>A collaborative data mining project exploring housing, demographics, and quality of life across Colorado and Utah.</p>
+      <p><strong>My contribution:</strong> I integrated Census and Zillow API data at the ZIP-code level, cleaned the combined dataset to 601 records, and created visualizations exploring relationships among income, housing costs, and migration. I also documented data-quality decisions and sampling limitations.</p>
+      <p><a class="post-read-more" href="https://sites.google.com/colorado.edu/dataminingspring2025group2/home" aria-label="View the Colorado vs. Utah project">View project</a> &middot; <a class="post-read-more" href="https://github.com/rileythejones/Data-Mining-Spring-2025-Group-2" aria-label="View the Colorado vs. Utah project code">View code</a></p>
+    </div>
+  </article>
+</section>
+
+<hr>
+<h2>Earlier Work</h2>
+{% endif %}
+
 <div class="posts-list">
   {% for post in paginator.posts %}
   <article class="post-preview">
