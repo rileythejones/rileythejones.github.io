@@ -1,38 +1,13 @@
 ---
 layout: page
-title: About me
-subtitle: What makes me tick. 
+title: About Me
+subtitle: Turning messy data into useful insights.
 ---
 
-I'm Riley Jones and these are a few things to know about me:
+I'm Riley Jones, a data scientist interested in how people make decisions and what we can learn from the data they leave behind. I work with Python and SQL to bring datasets together, explore patterns, and build machine learning models. My recent projects compare human and AI behavior in social deduction games, examine economic change across former Soviet republics, and explore housing and quality of life in Colorado and Utah.
 
-### my history
+I came to data science through web development and retail, began studying it full-time in 2019, and completed Lambda School's Data Science program in 2020. More recently, my coursework at the University of Colorado Boulder has taken me deeper into data mining and AI research. Across these projects, I've worked on data collection and cleaning, visualization, model evaluation, and LLM experiments. I enjoy turning messy real-world information into something understandable, with a clear explanation of what the results can and cannot tell us.
 
-I've always had an interest in stats and data science and in 2019 I decided it was finally time to study it full-time. I approached this field with web development and retail experience but mostly an obsession with organizing the messiness of the real world into useful insights that can serve a broad market. In August, 2020 I officially received my endorsement from the Lambda School Data Science program. It’s been a great choice for me. So many data science and engineering concepts come easily to me and now that I've found my calling, I'm never looking back. 
+Outside of data science, my interests include fragrance, music, and nutrition. I'm drawn to the ways personal taste, creativity, and everyday choices intersect with statistics and technology.
 
-### my skills
-
-- Python, using libraries and making them. 
-- SQL 
-- Data Visualization
-- Data Cleaning 
-- UX Design
-- Machine Learning
-- Docker 
-- AWS
-
-### my interests
-
-- Statistics
-- Prediction
-- Fragrance
-- Music 
-- Nutrition
-
-Feel free to reach out with any questions if you are interested in working with me. 
-
-### my aspirations
-
-- real time machine learning for interactive healthcare 
-- building a fragrance design engine and starting an artisanal shop
-- using machine learning to generate music 
+[Explore my recent projects]({{ '/' | relative_url }}#projects) or [connect with me on LinkedIn](https://www.linkedin.com/in/rileyjones12/) to talk about working together.
