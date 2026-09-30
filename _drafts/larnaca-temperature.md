@@ -26,3 +26,10 @@ I used 1978 through 2024 because the 1977 record has large gaps and the saved da
 I estimated the warming trend using ordinary least squares (OLS) regression, with year predicting annual mean temperature. OLS fits a straight line by minimizing the sum of squared differences between observed and predicted temperatures. The estimated warming rate is **0.57°C per decade**, equal to about **2.6°C between 1978 and 2024**.
 
 [Download the chart]({{ '/img/cyprus/temperature-trend.png' | relative_url }}) · [Annual data]({{ '/data/cyprus/larnaca-annual.csv' | relative_url }})
+
+| Data used | Years included | OLS warming estimate |
+|---|---:|---:|
+| All years, 1978–2024 | 47 | 0.57°C per decade |
+| Years with no missing days, 1978–2023 | 41 | 0.55°C per decade |
+
+Excluding the six years with missing days changed the warming estimate from 0.57°C to 0.55°C per decade. I kept all 47 years in the main analysis because dropping nearly complete years removed useful data with little effect on the estimated trend.
