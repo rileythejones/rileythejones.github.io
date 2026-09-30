@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Larnaca, Cyprus — temperature study location</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+<style>
+*{box-sizing:border-box}body{margin:0;background:#fff;color:#20353e;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.map-card{max-width:1100px;margin:auto}.map-heading{padding:22px 24px 16px;display:flex;justify-content:space-between;gap:20px;align-items:end}.eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:750;color:#577781;margin:0 0 6px}h1{font-size:27px;line-height:1.15;font-weight:650;margin:0} .period{font-size:13px;color:#57717a;margin:0 0 3px;white-space:nowrap}.map-wrap{position:relative;border:1px solid #d8e0e2;border-radius:8px;overflow:hidden;margin:0 20px}#map{height:490px;background:#173849;isolation:isolate}.view-controls{position:absolute;z-index:800;top:14px;left:14px;display:flex;gap:4px;padding:4px;border:1px solid #d4dde0;border-radius:7px;background:rgba(255,255,255,.96);box-shadow:0 2px 12px #001f3329}.view-controls button{font:600 12px/1.2 system-ui,sans-serif;border:0;border-radius:4px;padding:9px 12px;color:#234754;background:transparent;cursor:pointer}.view-controls button:hover{background:#e6eff2}.view-controls button[aria-pressed="true"]{background:#234f61;color:white}button:focus-visible,a:focus-visible,#map:focus-visible{outline:3px solid #f5b849;outline-offset:3px}.station-icon{background:none;border:0}.station-dot{display:block;width:20px;height:20px;border-radius:50%;background:#f5b849;border:3px solid white;box-shadow:0 0 0 5px #152e4670,0 2px 8px #0619249c}.station-label.leaflet-tooltip{font:650 13px/1.1 system-ui,sans-serif;background:#fff;color:#203c4a;border:0;padding:8px 10px;border-radius:4px;box-shadow:0 2px 8px #0005}.station-label.leaflet-tooltip-right:before{border-right-color:#fff}.leaflet-popup-content{font:14px/1.5 system-ui,sans-serif;color:#243d47}.station-popup h2{font-size:20px;margin:0 0 2px}.station-popup .station-id{font-size:12px;color:#627780;margin:0 0 12px}.station-popup dl{margin:0}.station-popup dt{font-size:11px;text-transform:uppercase;letter-spacing:.05em;color:#627780;margin-top:8px}.station-popup dd{margin:0;font-weight:600}.station-popup a{color:#246482}.map-footer{padding:13px 24px 17px;font-size:12px;line-height:1.6;color:#61747d;display:flex;flex-wrap:wrap;gap:5px 18px;justify-content:space-between}.map-footer p{margin:0}.map-footer a{color:#315e71;text-underline-offset:2px}.map-status{position:absolute;z-index:850;bottom:36px;left:12px;right:12px;background:#fff;padding:10px 12px;border-radius:4px;color:#243d47;font-size:13px}.map-status[hidden]{display:none}.leaflet-control-attribution{font-size:9px;max-width:100%;line-height:1.4}.leaflet-control-scale-line{background:#fffc;color:#253d49}.leaflet-control-zoom a{color:#234754}.leaflet-container{font-family:inherit}
+@media(max-width:600px){.map-heading{display:block;padding:18px 14px 13px}h1{font-size:23px}.period{margin-top:8px;white-space:normal}.map-wrap{margin:0 8px}#map{height:410px}.map-footer{padding:11px 14px}.view-controls{left:10px;top:10px}.view-controls button{padding:8px 10px}.station-label.leaflet-tooltip{font-size:12px;padding:7px 8px}.leaflet-control-attribution{font-size:8px}}
+</style>
+</head>
+<body>
+<main class="map-card">
+<header class="map-heading"><div><p class="eyebrow">Study location</p><h1>Larnaca, Cyprus</h1></div><p class="period">Daily temperature record · 1978–2024</p></header>
+<div class="map-wrap">
+<div id="map" role="region" aria-label="Interactive satellite map of Cyprus. Select the Larnaca marker for station details." tabindex="0"></div>
+<nav class="view-controls" aria-label="Map views"><button type="button" id="cyprus-view" aria-pressed="true">Cyprus</button><button type="button" id="station-view" aria-pressed="false">Larnaca</button><button type="button" id="region-view" aria-pressed="false">Region</button></nav>
+<p id="map-status" class="map-status" role="status" hidden>Satellite tiles could not load. The station coordinates and source are below.</p>
+</div>
+<footer class="map-footer"><p><strong>NOAA CY000176090</strong> · 34.8831° N, 33.6331° E</p><p>Drag to explore · Click the marker for details · <a href="https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-stations.txt" target="_blank" rel="noopener">Station source</a></p></footer>
+<noscript><p>This map needs JavaScript. The Larnaca station is at 34.8831° N, 33.6331° E.</p></noscript>
+</main>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+(function () {
+'use strict';
+const station = {"station": "CY000176090", "name": "Larnaca", "latitude": 34.8831, "longitude": 33.6331, "elevation_m": 1.0, "first_year": 1978, "last_year": 2024, "variable": "TAVG", "analysis_commit": "2388fb7565658151e26e95b9ffb41a4504a45be9", "metadata_url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-stations.txt", "data_url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CY000176090.dly"};
+const status = document.getElementById('map-status');
+if (typeof L === 'undefined') { status.hidden = false; status.textContent = 'The interactive map could not load. The station coordinates and source are below.'; return; }
+const point = [station.latitude, station.longitude];
+const map = L.map('map', {zoomControl:false,scrollWheelZoom:false,zoomSnap:0.25,minZoom:3,maxZoom:18});
+L.control.zoom({position:'topright'}).addTo(map);
+const imagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {maxZoom:18, attribution:'Imagery © <a href="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer" target="_blank" rel="noopener">Esri</a>, Vantor, Earthstar Geographics, GIS User Community'}).addTo(map);
+L.tileLayer('https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}', {maxZoom:18,attribution:'Labels: Esri, HERE, Garmin, © OpenStreetMap contributors'}).addTo(map);
+L.control.scale({imperial:false,position:'bottomleft'}).addTo(map);
+const marker = L.marker(point, {title:'Larnaca station: view details', alt:'Larnaca temperature station', icon:L.divIcon({className:'station-icon',html:'<span class="station-dot"></span>',iconSize:[20,20],iconAnchor:[10,10],popupAnchor:[0,-15]})}).addTo(map);
+marker.bindTooltip('Larnaca station', {permanent:true,direction:'right',offset:[13,0],className:'station-label'});
+marker.bindPopup('<section class="station-popup"><h2>Larnaca</h2><p class="station-id">NOAA '+station.station+'</p><dl><dt>Period analyzed</dt><dd>'+station.first_year+'–'+station.last_year+' · 47 years</dd><dt>Measurement</dt><dd>Daily average temperature (TAVG)</dd><dt>Elevation in NOAA metadata</dt><dd>'+station.elevation_m+' m</dd><dt>Coordinates</dt><dd>'+station.latitude+'° N, '+station.longitude+'° E</dd></dl><p><a href="'+station.data_url+'" target="_blank" rel="noopener">NOAA daily record ↗</a></p></section>', {maxWidth:285,minWidth:225});
+const views = {cyprus:L.latLngBounds([[34.45,32.15],[35.75,34.68]]),region:L.latLngBounds([[30.4,26.8],[38.2,37.5]])};
+const buttons = [['cyprus-view','cyprus'],['station-view','station'],['region-view','region']];
+function selectView(name) {
+ marker.closePopup();
+ if(name==='station') map.setView(point,12,{animate:false});
+ else map.fitBounds(views[name],{padding:[30,30],animate:false});
+ buttons.forEach(function(pair){document.getElementById(pair[0]).setAttribute('aria-pressed',String(pair[1]===name));});
+}
+buttons.forEach(function(pair){document.getElementById(pair[0]).addEventListener('click',function(){selectView(pair[1]);});});
+map.on('movestart',function(){buttons.forEach(function(pair){document.getElementById(pair[0]).setAttribute('aria-pressed','false');});});
+imagery.on('tileerror',function(){status.hidden=false;});
+imagery.on('tileload',function(){status.hidden=true;});
+selectView('cyprus');
+new ResizeObserver(function(){map.invalidateSize();}).observe(document.getElementById('map'));
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "station": "CY000176090",
+  "name": "Larnaca",
+  "latitude": 34.8831,
+  "longitude": 33.6331,
+  "elevation_m": 1.0,
+  "first_year": 1978,
+  "last_year": 2024,
+  "variable": "TAVG",
+  "analysis_commit": "2388fb7565658151e26e95b9ffb41a4504a45be9",
+  "metadata_url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-stations.txt",
+  "data_url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CY000176090.dly"
+}
