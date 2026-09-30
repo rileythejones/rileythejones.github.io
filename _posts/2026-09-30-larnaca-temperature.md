@@ -8,8 +8,6 @@ js:
   - "/js/cyprus-post.js"
 ---
 
-<!-- Working title. Build and review this post one section at a time. -->
-
 I wanted a good temperature dataset for a project I could build on, eventually incorporating changing energy prices in a dynamic geopolitical situation. Cyprus interested me because of its demand for air conditioning and dependence on imported energy. In 2024, net imports supplied [88% of its energy needs](https://ec.europa.eu/eurostat/web/products-eurostat-news/w/wdn-20260318-1), while cooling accounted for [16% of household energy use](https://ec.europa.eu/eurostat/web/products-eurostat-news/w/ddn-20260708-1), which is the highest share in the EU. I started with NOAA’s nearly complete daily temperature record for Larnaca from 1978 through 2024 to examine how temperatures have changed.
 
 ## Where the observations come from

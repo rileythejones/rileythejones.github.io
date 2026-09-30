@@ -5,7 +5,8 @@ import re
 import yaml
 from markdown_it import MarkdownIt
 ROOT=Path(__file__).resolve().parents[1]
-text=(ROOT/"_drafts/larnaca-temperature.md").read_text()
+source=next(iter(sorted((ROOT/"_posts").glob("*-larnaca-temperature.md"))), ROOT/"_drafts/larnaca-temperature.md")
+text=source.read_text()
 _,front,body=text.split("---",2)
 metadata=yaml.safe_load(front)
 title=re.search(r"^title:\s*(.+)$",front,re.M).group(1)
