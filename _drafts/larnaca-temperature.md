@@ -14,6 +14,8 @@ I wanted a good temperature dataset for a project I could build on, eventually i
 
 The daily temperatures come from NOAA's Larnaca station on the coast of Cyprus. Click the marker for station details, or zoom in to explore its surroundings.
 
+I used 1978 through 2024 because the 1977 record has large gaps and the saved dataset ends partway through 2025. Only 17 of 17,167 days were missing during the selected period. I kept all 47 years and calculated each annual average from the available daily readings.
+
 [Station metadata](https://www.ncei.noaa.gov/pub/data/ghcn/daily/ghcnd-stations.txt) · [Analysis notebook](https://github.com/rileythejones/01-climate-fall-template/blob/main/06-cyprus-temperature.ipynb)
 
 
