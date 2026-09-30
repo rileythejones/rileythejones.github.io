@@ -2,6 +2,10 @@
 layout: post
 title: Temperature change in Larnaca, Cyprus
 tags: [climate, python, data science]
+css:
+  - "/css/cyprus-post.css"
+js:
+  - "/js/cyprus-post.js"
 ---
 
 <!-- Working title. Build and review this post one section at a time. -->
@@ -10,7 +14,7 @@ I wanted a good temperature dataset for a project I could build on, eventually i
 
 ## Where the observations come from
 
-<iframe src="{{ '/img/cyprus/larnaca-map.html' | relative_url }}" title="Interactive map of the Larnaca temperature station in Cyprus" width="100%" height="690" style="border:0;" loading="lazy"></iframe>
+<iframe class="cyprus-visual" src="{{ '/img/cyprus/larnaca-map.html' | relative_url }}" title="Interactive map of the Larnaca temperature station in Cyprus" width="100%" height="690" style="border:0;" loading="lazy"></iframe>
 
 The daily temperatures come from NOAA's Larnaca station on the coast of Cyprus. Click the marker for station details, or zoom in to explore its surroundings.
 
@@ -21,7 +25,7 @@ I used 1978 through 2024 because the 1977 record has large gaps and the saved da
 
 ## How temperatures have changed
 
-<iframe src="{{ '/img/cyprus/temperature-trend.html' | relative_url }}" title="Larnaca annual temperatures and linear warming trend, 1978–2024" width="100%" height="690" style="border:0;" loading="lazy"></iframe>
+<iframe class="cyprus-visual" src="{{ '/img/cyprus/temperature-trend.html' | relative_url }}" title="Larnaca annual temperatures and linear warming trend, 1978–2024" width="100%" height="690" style="border:0;" loading="lazy"></iframe>
 
 I estimated the warming trend using [ordinary least squares (OLS) regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html), with year predicting annual mean temperature. OLS fits a straight line by minimizing the sum of squared differences between observed and predicted temperatures. The estimated warming rate is **0.57°C per decade**, equal to about **2.6°C between 1978 and 2024**.
 
