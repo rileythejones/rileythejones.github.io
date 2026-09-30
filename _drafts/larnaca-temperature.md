@@ -33,3 +33,5 @@ I estimated the warming trend using ordinary least squares (OLS) regression, wit
 | Years with no missing days, 1978–2023 | 41 | 0.55°C per decade |
 
 Excluding the six years with missing days changed the warming estimate from 0.57°C to 0.55°C per decade. I kept all 47 years in the main analysis because dropping nearly complete years removed useful data with little effect on the estimated trend.
+
+This result only describes one station in Larnaca. Comparing records from nearby stations such as [Nicosia (Athalassa), Akrotiri, and Paphos](https://www.mesonet.agron.iastate.edu/sites/networks.php?network=CY__ASOS&station=LCLK), and checking for changes in station location, equipment, or surrounding development, would help determine how well it represents warming across Cyprus.
