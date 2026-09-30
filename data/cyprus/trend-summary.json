@@ -1,0 +1,13 @@
+{
+  "station": "CY000176090",
+  "first_year": 1978,
+  "last_year": 2024,
+  "annual_observations": 47,
+  "selection": "All years in 1978\u20132024; missing daily readings omitted",
+  "excluded_candidate_years": [],
+  "valid_days": 17150,
+  "missing_days": 17,
+  "slope_c_per_decade": 0.5683001471527469,
+  "r_squared": 0.7882612094928805,
+  "fitted_change_c": 2.614180676902636
+}

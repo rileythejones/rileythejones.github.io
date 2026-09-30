@@ -1,0 +1,20 @@
+{
+  "analysis_repository": "https://github.com/rileythejones/01-climate-fall-template",
+  "analysis_commit": "2388fb7565658151e26e95b9ffb41a4504a45be9",
+  "notebook": "06-cyprus-temperature.ipynb",
+  "annual_data": "data/cyprus_climate/larnaca-annual.csv",
+  "raw_source": {
+    "station": "CY000176090",
+    "name": "Larnaca",
+    "latitude": 34.8831,
+    "longitude": 33.6331,
+    "elevation_m": 1.0,
+    "url": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/all/CY000176090.dly",
+    "format_documentation": "https://www.ncei.noaa.gov/pub/data/ghcn/daily/readme.txt",
+    "retrieved_utc": "2026-09-30T04:06:25.464247+00:00",
+    "sha256": "4c6b4d3397067cf3379745a01f78eb9c6ccd3f8008362217cd42adcab25e56dd",
+    "units": "tenths of degrees Celsius",
+    "variable": "TAVG",
+    "measurement": "Average of hourly readings over the UTC day for source S, measurement flag H."
+  }
+}
