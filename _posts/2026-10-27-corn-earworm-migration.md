@@ -36,9 +36,6 @@ ecoregions for the map.
 
 <iframe class="corn-earworm-map" src="{{ '/img/corn-earworm/migration-map.html' | relative_url }}" title="Monthly corn earworm observations by ecoregion in 2025" width="100%" height="950" loading="lazy" style="border: 0;"></iframe>
 
-*Move the slider to compare months and hover for record counts. Gray means no
-retained group. Shading covers whole ecoregions, not just the recorded locations.*
-
 [Open the full map]({{ '/img/corn-earworm/migration-map.html' | relative_url }})
 or [view the static comparison]({{ '/img/corn-earworm/seasonal-map.png' | relative_url }}).
 
