@@ -6,6 +6,10 @@ css:
   - "/css/corn-earworm-post.css"
 ---
 
+I picked corn earworm because corn is important to the US economy and food
+supply. It's used for livestock feed, food ingredients, and ethanol
+([USDA ERS](https://www.ers.usda.gov/topics/crops/corn-and-other-feed-grains/feed-grains-sector-at-a-glance)).
+
 I wanted to see whether corn earworm sightings were farther north in summer
 than in spring.
 
@@ -25,13 +29,12 @@ the US.
 
 I grouped the records using [RESOLVE Ecoregions 2017](https://developers.google.com/earth-engine/datasets/catalog/RESOLVE_ECOREGIONS_2017),
 which divides land into regions with distinct ecological communities.
-Seventeen records didn't match a region. Following the course method, I removed
-groups with only one record in a given month. That left 2,123 records in 39
+Seventeen records didn't match a region. I required at least two records per ecoregion per month so the map wouldn't highlight an entire region based on a single sighting. That left 2,123 records in 39
 ecoregions for the map.
 
 ## More northern ecoregions have records by September
 
-<iframe class="corn-earworm-map" src="{{ '/img/corn-earworm/migration-map.html' | relative_url }}" title="Monthly corn earworm observations by ecoregion in 2025" width="100%" height="790" loading="lazy" style="border: 0;"></iframe>
+<iframe class="corn-earworm-map" src="{{ '/img/corn-earworm/migration-map.html' | relative_url }}" title="Monthly corn earworm observations by ecoregion in 2025" width="100%" height="950" loading="lazy" style="border: 0;"></iframe>
 
 *Move the slider to compare months and hover for record counts. Gray means no
 retained group. Shading covers whole ecoregions, not just the recorded locations.*
