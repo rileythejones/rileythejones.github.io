@@ -5,7 +5,7 @@ tags: [ecology, migration, python, data science]
 css:
   - "/css/corn-earworm-post.css"
 js:
-  - "/js/corn-earworm-post.js"
+  - "/js/corn-earworm-post.js?v=20261027-2"
 ---
 
 I picked corn earworm because corn is important to the US economy and food
@@ -36,9 +36,9 @@ ecoregions for the map.
 
 ## More northern ecoregions have records by September
 
-<iframe class="corn-earworm-map" src="{{ '/img/corn-earworm/migration-map.html' | relative_url }}" title="Monthly corn earworm observations by ecoregion in 2025" width="100%" height="950" loading="lazy" style="border: 0;"></iframe>
+<iframe class="corn-earworm-map" src="{{ '/img/corn-earworm/migration-map.html' | relative_url }}?v=20261027-2" title="Monthly corn earworm observations by ecoregion in 2025" width="100%" height="950" loading="lazy" style="border: 0;"></iframe>
 
-[Open the full map]({{ '/img/corn-earworm/migration-map.html' | relative_url }})
+[Open the full map]({{ '/img/corn-earworm/migration-map.html' | relative_url }}?v=20261027-2)
 or [view the static comparison]({{ '/img/corn-earworm/seasonal-map.png' | relative_url }}).
 
 For the colors, I divided each group's count by the averages for its ecoregion
