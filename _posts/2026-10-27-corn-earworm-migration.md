@@ -4,6 +4,8 @@ title: "Corn earworm sightings across the 2025 growing season"
 tags: [ecology, migration, python, data science]
 css:
   - "/css/corn-earworm-post.css"
+js:
+  - "/js/corn-earworm-post.js"
 ---
 
 I picked corn earworm because corn is important to the US economy and food
