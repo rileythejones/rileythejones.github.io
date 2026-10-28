@@ -1,0 +1,37 @@
+{
+  "query": {
+    "scientific_name": "Helicoverpa zea",
+    "species_key": "3K9KZ",
+    "year": 2025,
+    "checklist_key": "7ddf754f-d193-4cc9-b351-99906754a03b",
+    "format": "SIMPLE_CSV",
+    "predicates": [
+      "speciesKey = 3K9KZ",
+      "hasCoordinate = TRUE",
+      "hasGeospatialIssue = FALSE",
+      "year = 2025",
+      "occurrenceStatus = PRESENT",
+      "basisOfRecord in [\"HUMAN_OBSERVATION\", \"MACHINE_OBSERVATION\"]"
+    ]
+  },
+  "download_key": "0037807-260928105237408",
+  "requested_utc": "2026-10-21T01:17:11.942730+00:00",
+  "doi": "10.15468/dl.7cptc8",
+  "total_records": 2207,
+  "status": "SUCCEEDED",
+  "download_page": "https://www.gbif.org/occurrence/download/0037807-260928105237408",
+  "gbif_archive_url": "https://api.gbif.org/v1/occurrence/download/request/0037807-260928105237408.zip",
+  "ecoregion_archive_url": "https://storage.googleapis.com/teow2016/Ecoregions2017.zip",
+  "tested_versions": {
+    "geopandas": "1.1.4",
+    "pandas": "3.0.6",
+    "numpy": "2.4.6",
+    "matplotlib": "3.11.2",
+    "bokeh": "3.9.2",
+    "shapely": "2.1.2",
+    "pyproj": "3.7.2",
+    "requests": "2.34.2",
+    "nbformat": "5.11.1",
+    "ipykernel": "7.3.0"
+  }
+}

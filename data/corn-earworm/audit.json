@@ -1,0 +1,25 @@
+{
+  "download_doi": "10.15468/dl.7cptc8",
+  "worldwide_records": 2207,
+  "country_scope_records": 2198,
+  "invalid_records": 0,
+  "country_counts": {
+    "US": 2135,
+    "CA": 51,
+    "MX": 12
+  },
+  "coordinate_uncertainty_missing": 416,
+  "coordinate_uncertainty_over_10km": 203,
+  "dataset_counts": {
+    "50c9509d-22c7-4a22-a47d-8c48425ef4a7": 2198
+  },
+  "basis_of_record_counts": {
+    "HUMAN_OBSERVATION": 2198
+  },
+  "matched_records": 2181,
+  "unmatched_records": 17,
+  "singleton_groups": 58,
+  "retained_groups": 150,
+  "mapped_records": 2123,
+  "mapped_ecoregions": 39
+}

@@ -1,0 +1,2 @@
+.corn-earworm-map { display: block; width: 100%; height: 850px; border: 0; margin: 1.5rem 0 .5rem; }
+@media (max-width: 600px) { .corn-earworm-map { height: 760px; } }

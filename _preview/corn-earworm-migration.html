@@ -1,0 +1,50 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Corn earworm sightings across the 2025 growing season | Draft preview</title><style>*{box-sizing:border-box}body{margin:0;color:#20353e;background:#fff;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:17px;line-height:1.7}main{max-width:1000px;padding:34px 28px 60px;margin:auto}.status{font-size:12px;color:#61717a;margin:0 0 12px}h1{font-size:36px;line-height:1.2;margin:0 0 25px;font-weight:650}h2{font-size:25px;line-height:1.3;margin:38px 0 15px}p{margin:0 0 19px}a{color:#246482;text-underline-offset:3px}img{max-width:100%;height:auto}iframe{display:block;max-width:100%}a:focus-visible{outline:3px solid #d49a31;outline-offset:3px}@media(max-width:600px){main{padding:23px 15px 40px;font-size:16px}h1{font-size:29px}h2{font-size:22px}}.corn-earworm-map { display: block; width: 100%; height: 850px; border: 0; margin: 1.5rem 0 .5rem; }
+@media (max-width: 600px) { .corn-earworm-map { height: 760px; } }
+</style></head><body><main><p class="status">Local draft preview</p><h1>Corn earworm sightings across the 2025 growing season</h1><p>I wanted to see whether corn earworm sightings were farther north in summer
+than in spring.</p>
+<p>Corn earworm (<em>Helicoverpa zea</em>) caterpillars feed on crops. The adult moths
+can travel long distances, and arrivals from the south help establish seasonal
+populations in northern areas where cold winters limit survival
+(<a href="https://ask.ifas.ufl.edu/publication/IN302">UF/IFAS</a>).</p>
+<h2>The data</h2>
+<p>I used a <a href="https://doi.org/10.15468/dl.7cptc8">GBIF download</a> of 2025 observations
+from <a href="https://www.gbif.org/dataset/50c9509d-22c7-4a22-a47d-8c48425ef4a7">iNaturalist</a>.
+I chose a complete calendar year and kept the 2,198 records from the US,
+Canada, and Mexico to look at northern seasonal spread. These records have
+coordinates and no flagged geographic issues. Most of them, 2,135, are from
+the US.</p>
+<p>I grouped the records using <a href="https://developers.google.com/earth-engine/datasets/catalog/RESOLVE_ECOREGIONS_2017">RESOLVE Ecoregions 2017</a>,
+which divides land into regions with distinct ecological communities.
+Seventeen records didn't match a region. Following the course method, I removed
+groups with only one record in a given month. That left 2,123 records in 39
+ecoregions for the map.</p>
+<h2>More northern ecoregions have records by September</h2>
+<iframe class="corn-earworm-map" src="../img/corn-earworm/migration-map.html" title="Monthly corn earworm observations by ecoregion in 2025" width="100%" height="790" loading="lazy" style="border: 0;"></iframe>
+<p><em>Move the slider to compare months and hover for record counts. Gray means no
+retained group. Shading covers whole ecoregions, not just the recorded locations.</em></p>
+<p><a href="../img/corn-earworm/migration-map.html">Open the full map</a>
+or <a href="../img/corn-earworm/seasonal-map.png">view the static comparison</a>.</p>
+<p>For the colors, I divided each group's count by the averages for its ecoregion
+and month, using only retained groups. The logarithmic color scale stays the
+same across months. This score helps compare patterns, but it isn't an animal
+count or a measure of how much people looked.</p>
+<p>The March map is mostly southern. By September, more northern ecoregions have
+records. February and December are blank because none of their groups passed
+the filter.</p>
+<h2>Recorded latitude is higher by September</h2>
+<p><img src="../img/corn-earworm/seasonal-coverage.png" alt="Monthly record counts and the median and middle 50 percent of recorded latitudes" /></p>
+<p><em>All 2,198 records, before the map filters. Dots show monthly medians; bars span
+the middle 50% of recorded latitudes, not confidence intervals.</em></p>
+<p>The median latitude went from 29.7°N in March to 38.9°N in September. This fits
+the expected northward spread. However, March had 27 records and September had
+687, so changes in where and how much people looked could also affect the
+pattern.</p>
+<p>November's median was farther south, but there were only 20 records. I wouldn't
+take that alone as evidence of return migration.</p>
+<p><a href="https://doi.org/10.3389/finsc.2026.1726127">Twaibu et al. (2026)</a> found isotope
+evidence that some moths collected in Florida came from farther north. These
+occurrence records don't track individuals or distinguish life stages, and some
+locations are imprecise. They show where sightings were reported, but can't
+establish those journeys.</p>
+<p><a href="../notebooks/corn-earworm-migration.ipynb">Analysis notebook</a></p>
+</main></body></html>
