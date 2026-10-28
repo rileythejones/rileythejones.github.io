@@ -23,7 +23,13 @@
             pendingFit = requestAnimationFrame(function () {
               // measure the map, not the iframe's full document height
               const height = Math.ceil(map.getBoundingClientRect().height) + 2;
-              if (height > 2) frame.style.height = height + 'px';
+              if (height > 2) {
+                // avoid scrollbars changing the map width during a resize
+                frame.scrolling = 'no';
+                if (frame.style.height !== height + 'px') {
+                  frame.style.height = height + 'px';
+                }
+              }
             });
           }
 
